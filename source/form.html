@@ -34,9 +34,112 @@
       </nav>
     </header>
 
-    <main class="page__main page-main">
-      <div class="page-main__wrapper"></div>
-
+    <main class="page__main page-form">
+      <h1 class="visually-hidden">Анкета участника конкурса</h1>
+      <section class="profile">
+        <div class="profile__wrapper">
+          <div class="profile__description">
+            <b class="profile__title">Конкурс на самое безбашенное путешествие с Пинк</b>
+            <div class="profile__img">
+              <img src="https://via.placeholder.com" width="320" height="462" alt="Задний фон form">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="profile">
+        <p class="profile__title">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+        <form class="profile__form">
+          <fieldset class="form-personal">
+            <ul>
+              <li>
+                <label>Фамилия:</label>
+                <input class="" type="text" placeholder="Укажите фамилию *">
+              </li>
+              <li>
+                <label>Имя:</label>
+                <input class="" type="text" placeholder="Введите ваше имя *">
+              </li>
+              <li>
+                <label>Отчество:</label>
+                <input class="" type="text" placeholder="Ну и отчество тоже">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form-preferences">
+            <legend class="">С каким приложением путешествовали</legend>
+            <ul>
+              <li>
+                <input class="" type="radio">
+                <label>Pink для iOS</label>
+              </li>
+              <li>
+                <input class="" type="radio">
+                <label>Pink на Android</label>
+              </li>
+              <li>
+                <input class="" type="radio">
+                <label>Windows Phone</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form-contacts">
+            <ul>
+              <li>
+                <label class="" for="phone">Номер телефона</label>
+                <input class="" type="tel" id="phone" placeholder="Номер, пожалуйста">
+              </li>
+              <li>
+                <label class="" for="mail">Адрес почты</label>
+                <input class="" type="tel" id="mail" placeholder="Введите почту *">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form-achievement">
+            <legend class="">Ваши безбашенные достижения в путешествии</legend>
+            <ul>
+              <li>
+                <input class="" type="checkbox" id="selfie" checked>
+                <label class="" for="selfie">Сделал селфи с акулой</label>
+              </li>
+              <li>
+                <input class="" type="checkbox" id="sunburned" checked>
+                <label class="" for="sunburned">Обгорел на пляже</label>
+              </li>
+              <li>
+                <input class="" type="checkbox" id="Norris">
+                <label class="" for="Norris">Видел Чака Норриса</label>
+              </li>
+              <li>
+                <input class="" type="checkbox" id="souvenirs">
+                <label class="" for="souvenirs">Накупил сувениров</label>
+              </li>
+              <li>
+                <input class="" type="checkbox" id="tower" checked>
+                <label class="" for="tower">Удержал башню</label>
+              </li>
+              <li>
+                <input class="" type="checkbox" id="hotel">
+                <label class="" for="hotel">Разгромил отель</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form-feeling">
+            <div class="">
+              <textarea class="" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </div>
+          </fieldset>
+          <div class="form__bottom">
+            <button name="">Отправить форму</button>
+            <div class="">
+              <div class="">
+                <p class="">- обязательные</p>
+                <p class="">для заполнения</p>
+                <p class="">поля</p>
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
     </main>
 
     <footer class="page__footer page-footer">
