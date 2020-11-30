@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html class="page page_form" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
@@ -34,51 +34,45 @@
       </nav>
     </header>
 
-    <main class="page__main page-form">
-      <h1 class="visually-hidden">Анкета участника конкурса</h1>
-      <section class="profile">
-        <div class="profile__wrapper">
-          <div class="profile__description">
-            <b class="profile__title">Конкурс на самое безбашенное путешествие с Пинк</b>
-            <div class="profile__img">
-              <img src="https://via.placeholder.com" width="320" height="462" alt="Задний фон form">
-            </div>
-          </div>
+    <main class="page__main">
+      <section class="contest">
+        <div class="contest__wrapper">
+          <h1 class="contest__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
         </div>
       </section>
       <section class="profile">
         <p class="profile__title">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
-        <form class="profile__form">
-          <fieldset class="form-personal">
-            <ul>
-              <li>
-                <label>Фамилия:</label>
-                <input class="" type="text" placeholder="Укажите фамилию *">
+        <form class="profile__form form">
+          <fieldset class="form-name">
+            <ul class="form-name__list">
+              <li class="form-name__list-item">
+                <label class="form-name__label text-label" for="surname">Фамилия:</label>
+                <input class="form-name__input text-input" type="text" id="surname" placeholder="Укажите фамилию *">
               </li>
-              <li>
-                <label>Имя:</label>
-                <input class="" type="text" placeholder="Введите ваше имя *">
+              <li class="form-name__list-item">
+                <label class="form-name__label text-label" for="name">Имя:</label>
+                <input class="form-name__input text-input" type="text" id="name" placeholder="Введите ваше имя *">
               </li>
-              <li>
-                <label>Отчество:</label>
-                <input class="" type="text" placeholder="Ну и отчество тоже">
+              <li class="form-name__list-item">
+                <label class="form-name__label text-label" for="midname">Отчество:</label>
+                <input class="form-name__input text-input" type="text" id="midname" placeholder="Ну и отчество тоже">
               </li>
             </ul>
           </fieldset>
           <fieldset class="form-preferences">
-            <legend class="">С каким приложением путешествовали</legend>
-            <ul>
-              <li>
-                <input class="" type="radio">
-                <label>Pink для iOS</label>
+            <legend class="form-preferences__legeng">С каким приложением путешествовали</legend>
+            <ul class="form-preferences__list">
+              <li class="form-preferences__list-item">
+                <input class="form-preferences__input radio-input" type="radio" id="ios">
+                <label class="form-preferences__label radio-label" for="ios">Pink для iOS</label>
               </li>
               <li>
-                <input class="" type="radio">
-                <label>Pink на Android</label>
+                <input class="form-preferences__input radio-input" type="radio" id="android">
+                <label class="form-preferences__label radio-label" for="android">Pink на Android</label>
               </li>
               <li>
-                <input class="" type="radio">
-                <label>Windows Phone</label>
+                <input class="form-preferences__input radio-input" type="radio" id="windows">
+                <label class="form-preferences__label radio-label" for="windows">Windows Phone</label>
               </li>
             </ul>
           </fieldset>
@@ -132,9 +126,7 @@
             <button name="">Отправить форму</button>
             <div class="">
               <div class="">
-                <p class="">- обязательные</p>
-                <p class="">для заполнения</p>
-                <p class="">поля</p>
+                <p class="">- обязательные для заполнения поля</p>
               </div>
             </div>
           </div>
