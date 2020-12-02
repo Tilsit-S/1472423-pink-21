@@ -7,8 +7,7 @@
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/style.css">
   </head>
-
-  <body>
+  <body class="page__body">
     <header class="page__header page-header">
       <a class="page-header__logo" href="index.html">
         <img src="https://via.placeholder.com" width="60" height="40" alt="Приложение для обработки фотографий «Pink»">
@@ -33,7 +32,6 @@
         </div>
       </nav>
     </header>
-
     <main class="page__main">
       <section class="contest">
         <div class="contest__wrapper">
@@ -66,86 +64,83 @@
                 <input class="form-preferences__input radio-input" type="radio" id="ios">
                 <label class="form-preferences__label radio-label" for="ios">Pink для iOS</label>
               </li>
-              <li>
+              <li class="form-preferences__list-item">
                 <input class="form-preferences__input radio-input" type="radio" id="android">
                 <label class="form-preferences__label radio-label" for="android">Pink на Android</label>
               </li>
-              <li>
+              <li class="form-preferences__list-item">
                 <input class="form-preferences__input radio-input" type="radio" id="windows">
                 <label class="form-preferences__label radio-label" for="windows">Windows Phone</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="form-contacts">
-            <ul>
-              <li>
-                <label class="" for="phone">Номер телефона</label>
-                <input class="" type="tel" id="phone" placeholder="Номер, пожалуйста">
+            <ul class="form-contacts__list">
+              <li class="form-contacts__list-item">
+                <label class="form-contacts__label" for="phone">Номер телефона</label>
+                <input class="form-contacts__input" type="tel" id="phone" placeholder="Номер, пожалуйста">
               </li>
-              <li>
-                <label class="" for="mail">Адрес почты</label>
-                <input class="" type="tel" id="mail" placeholder="Введите почту *">
+              <li class="form-contacts__list-item">
+                <label class="form-contacts__label" for="mail">Адрес почты</label>
+                <input class="form-contacts__input" type="email" id="mail" placeholder="Введите почту *">
               </li>
             </ul>
           </fieldset>
           <fieldset class="form-achievement">
-            <legend class="">Ваши безбашенные достижения в путешествии</legend>
-            <ul>
-              <li>
-                <input class="" type="checkbox" id="selfie" checked>
-                <label class="" for="selfie">Сделал селфи с акулой</label>
+            <legend class="form-achievement__legend">Ваши безбашенные достижения в путешествии</legend>
+            <ul class="form-achievement__list">
+              <li class="form-achievement__list-item">
+                <input class="form-achievement__input" type="checkbox" id="selfie" checked>
+                <label class="form-achievement__label" for="selfie">Сделал селфи с акулой</label>
               </li>
-              <li>
-                <input class="" type="checkbox" id="sunburned" checked>
-                <label class="" for="sunburned">Обгорел на пляже</label>
+              <li class="form-achievement__list-item">
+                <input class="form-achievement__input" type="checkbox" id="sunburned" checked>
+                <label class="form-achievement__label" for="sunburned">Обгорел на пляже</label>
               </li>
-              <li>
-                <input class="" type="checkbox" id="Norris">
-                <label class="" for="Norris">Видел Чака Норриса</label>
+              <li class="form-achievement__list-item">
+                <input class="form-achievement__input" type="checkbox" id="Norris">
+                <label class="form-achievement__label" for="Norris">Видел Чака Норриса</label>
               </li>
-              <li>
-                <input class="" type="checkbox" id="souvenirs">
-                <label class="" for="souvenirs">Накупил сувениров</label>
+              <li class="form-achievement__list-item">
+                <input class="form-achievement__input" type="checkbox" id="souvenirs">
+                <label class="form-achievement__label" for="souvenirs">Накупил сувениров</label>
               </li>
-              <li>
-                <input class="" type="checkbox" id="tower" checked>
-                <label class="" for="tower">Удержал башню</label>
+              <li class="form-achievement__list-item">
+                <input class="form-achievement__input" type="checkbox" id="tower" checked>
+                <label class="form-achievement__label" for="tower">Удержал башню</label>
               </li>
-              <li>
-                <input class="" type="checkbox" id="hotel">
-                <label class="" for="hotel">Разгромил отель</label>
+              <li class="form-achievement__list-item">
+                <input class="form-achievement__input" type="checkbox" id="hotel">
+                <label class="form-achievement__label" for="hotel">Разгромил отель</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="form-feeling">
-            <div class="">
-              <textarea class="" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            <div class="form-feeling__explain">
+              <textarea class="form-feeling__textarea" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </div>
           </fieldset>
           <div class="form__bottom">
-            <button name="">Отправить форму</button>
-            <div class="">
-              <div class="">
-                <p class="">- обязательные для заполнения поля</p>
-              </div>
+            <button name="form__button">Отправить форму</button>
+            <div class="form__container">
+                <p class="form__require">- обязательные для заполнения поля</p>
             </div>
           </div>
         </form>
       </section>
     </main>
-
     <footer class="page__footer page-footer">
       <div class="page-footer__wrapper">
         <a class="page-footer__logo" href="index.html">Pink</a>
         <ul class="social">
-          <li class="social__item" aria-label="twitter-link">
-            <a class="social__item_twitter" href="#nowhere">Twitter</a>
+          <li class="social__item">
+            <a class="social__item_twitter" href="#nowhere" aria-label="Twitter"></a>
           </li>
-          <li class="social__item" aria-label="fb-link">
-            <a class="social__item_fb" href="#nowhere">Facebook</a>
+          <li class="social__item">
+            <a class="social__item_fb" href="#nowhere" aria-label="Facebook"></a>
           </li>
-          <li class="social__item" aria-label="youtube-link">
-            <a class="social__item_youtube" href="#nowhere">YouTube</a>
+          <li class="social__item">
+            <a class="social__item_youtube" href="#nowhere" aria-label="YouTube"></a>
           </li>
         </ul>
         <div class="page-footer__copyright">
