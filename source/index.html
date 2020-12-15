@@ -26,7 +26,7 @@
               <a href="#nowhere">Конкурс</a>
             </li>
             <li class="main-nav__item">
-              <a href="#nowhere" target="_blank">HTML Academy</a>
+              <a href="https://htmlacademy.ru/" target="_blank">HTML Academy</a>
             </li>
           </ul>
         </div>
@@ -35,7 +35,7 @@
     <main class="page-main">
       <h1 class="visually-hidden">Приложение для цифровой обработки фотографий</h1>
       <section class="promo">
-        <div class="promo__wrapper">
+        <div class="page__wrapper promo__wrapper">
           <h2 class="visually-hidden">Презентация приложения</h2>
           <div class="promo__main">
             <b class="promo__title">Взгляните на жизнь иначе!</b>
@@ -65,52 +65,49 @@
         </div>
       </section>
       <section class="offers">
-        <div class="offers__wrapper">
+        <div class="page__wrapper offers__wrapper">
           <h2 class="visually-hidden">Краткое описание приложения</h2>
-          <h3 class="offers__title">
-            <p class="offers__title">Устали от серости мегаполиса?</p>
-            <p>Нам есть, что вам предложить!</p>
-          </h3>
-        </div>
-        <ul class="offers__list">
-          <li class="offers__item offer">
-            <p class="offer__img">
-              <img src="https://via.placeholder.com" width="186" height="382" alt="Фотография мусорки светлая">
+          <p class="offers__title">Устали от серости мегаполиса?</p>
+          <p class="offers__title">Нам есть, что вам предложить!</p>
+          <ul class="offers__list">
+            <li class="offers__item offer">
+              <div class="offer__img">
+                <img src="https://via.placeholder.com" width="186" height="382" alt="Фотография мусорки светлая">
+              </div>
+              <h3 class="offer__title">Поднимает настроение</h3>
+              <p class="offer__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов</p>
+            </li>
+            <li class="offers__item offer">
+              <div class="offer__img">
+                <img src="https://via.placeholder.com" width="186" height="382" alt="Фотография мусорки затемнённая">
+              </div>
+              <h3 class="offer__title">Меняет мир вокруг</h3>
+              <p class="offer__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="offers__item offer">
+              <div class="offer__img">
+                <img src="https://via.placeholder.com" width="186"  height="382" alt="Фотография мусорки со смайлом">
+              </div>
+              <h3 class="offer__title">Заводит новых друзей</h3>
+              <p class="offer__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+          <div class="offers__advantage advantage">
+            <h3 class="visually-hidden">Положительный эффект от использования приложения</h3>
+            <p class="advantage__img">
+              <img src="https://via.placeholder.com" width="298" height="345" alt="Изображение секундомера">
             </p>
-            <h3 class="offer__title">Поднимает настроение</h3>
-            <p class="offer__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов</p>
-          </li>
-          <li class="offers__item offer">
-            <p class="offer__img">
-              <img src="https://via.placeholder.com" width="186" height="382" alt="Фотография мусорки затемнённая">
-            </p>
-            <h3 class="offer__title">Меняет мир вокруг</h3>
-            <p class="offer__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          </li>
-          <li class="offers__item offer">
-            <p class="offer__img">
-              <img src="https://via.placeholder.com" width="186"  height="382" alt="Фотография мусорки со смайлом">
-            </p>
-            <h3 class="offer__title">Заводит новых друзей</h3>
-            <p class="offer__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-          </li>
-        </ul>
-      </section>
-      <section class="advantage">
-        <div class="advantage__wrapper">
-          <h2 class="visually-hidden">Положительный эффект от использования приложения</h2>
-          <p class="advantage__img">
-            <img src="https://via.placeholder.com" width="298" height="345" alt="Изображение секундомера">
-          </p>
-          <div class="advantage__main">
-            <h3 class="advantage__title">Эффект на 24 часа</h3>
-            <p class="advantage__description">Британские учёные провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-            <a class="advantage__link" href="#nowhere">Узнать больше об исследовании</a>
-          </div>>
+            <div class="advantage__main">
+              <h3 class="advantage__title">Эффект на 24 часа</h3>
+              <p class="advantage__description">Британские учёные провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+              <a class="advantage__link" href="#nowhere">Узнать больше об исследовании</a>
+            </div>
+          </div>
         </div>
       </section>
+
       <section class="reviews">
-        <div class="reviews__wrapper">
+        <div class="page__wrapper reviews__wrapper">
           <h2 class="visually-hidden">Отзывы пользователей</h2>
           <ul class="reviews__list">
             <li class="reviews__writter review">
@@ -122,50 +119,73 @@
             </li>
           </ul>
           <div class="reviews__toggles toggles">
-            <button class="slider__toggle slider__toggle_current" type="button"></button>
-            <button class="slider__toggle" type="button" name="reviews"></button>
-            <button class="slider__toggle" type="button" name="reviews"></button>
+            <button class="toggles__item toggles__item_current" type="button" aria-label="1 слайд"></button>
+            <button class="toggles__item" type="button" name="reviews" aria-label="2 слайд"></button>
+            <button class="toggles__item" type="button" name="reviews" aria-label="3 слайд"></button>
           </div>
         </div>
       </section>
       <section class="price">
-        <div class="price__wrapper">
+        <div class="page__wrapper price__wrapper">
           <h2 class="visually-hidden">Прайс-лист</h2>
           <table class="price__table table">
+            <tr class="table__caption">
+              <th class="table__th"></th>
+              <th class="table__th">
+                <p class="table__title">база</p>
+                <p class="table__value">1,99 usd</p>
+              </th>
+              <th class="table__th">
+                <p class="table__title">стандарт</p>
+                <p class="table__value">3,99 usd</p>
+              </th>
+              <th class="table__th">
+                <p class="table__title">анлим</p>
+                <p class="table__value">9,99 usd</p>
+              </th>
+            </tr>
             <tr class="table__row">
-              <th></th>
-              <th class="table__th">
-                <p class="price__title">база</p>
-                <p class="price__value">1,99 usd</p>
-              </th>
-              <th class="table__th">
-                <p class="price__title">стандарт</p>
-                <p class="price__value">3,99 usd</p>
-              </th>
-              <th class="table__th">
-                <p class="price__title">анлим</p>
-                <p class="price__value">9,99 usd</p>
-              </th>
+              <th class="table__td table__td_caption">Розовый фильтр</th>
+              <td class="table__td">
+                <span class="status status_mark"></span>
+              </td>
+              <td class="table__td">
+                <span class="status status_cross"></span>
+              </td>
+              <td class="table__td">
+                <span class="status status_cross"></span>
+              </td>
             </tr>
-            <tr class="price__writter visuality">
-              <td>Розовый фильтр</td>
-              <td></td>
-              <td></td>
-              <td></td>
+            <tr class="table__row">
+              <th class="table__td table__td_caption">Смайлики</th>
+              <td class="table__td">
+                <span class="status status_mark"></span>
+              </td>
+              <td class="table__td">
+                <span class="status status_mark"></span>
+              </td>
+              <td class="table__td">
+                <span class="status status_cross"></span>
+              </td>
             </tr>
-            <tr class="price__writter visuality">
-              <td>Смайлики</td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr class="price__writter visuality">
-              <td>Комментарии</td>
-              <td></td>
-              <td></td>
-              <td></td>
+            <tr class="table__row">
+              <th class="table__td table__td_caption">Комментарии</th>
+              <td class="table__td">
+                <span class="status status_mark"></span>
+              </td>
+              <td class="table__td">
+                <span class="status status_mark"></span>
+              </td>
+              <td class="table__td">
+                <span class="status status_mark"></span>
+              </td>
             </tr>
           </table>
+          <div class="price__toggles toggles">
+            <button class="toggles__item toggles__item_current" type="button" aria-label="1 слайд"></button>
+            <button class="toggles__item" type="button" name="reviews" aria-label="2 слайд"></button>
+            <button class="toggles__item" type="button" name="reviews" aria-label="3 слайд"></button>
+          </div>
         </div>
       </section>
       <section class="contacts-and-map">
@@ -193,8 +213,8 @@
       </section>
     </main>
     <footer class="page__footer page-footer">
-      <div class="page-footer__wrapper">
-        <a class="page-footer__logo" href="index.html">Pink</a>
+      <div class="page__wrapper page-footer__wrapper">
+        <a class="page-footer__logo">Pink</a>
         <ul class="social">
           <li class="social__item">
             <a class="social__item_twitter" href="#nowhere" aria-label="Twitter"></a>
@@ -208,9 +228,7 @@
         </ul>
         <div class="page-footer__copyright">
           <p class="page-footer__copyright-text">Разработано</p>
-          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img src="https://via.placeholder.com" width="27" height="34" alt="Логотип HTML Academy">
-          </a>
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HtmlAcademy"></a>
         </div>
       </div>
     </footer>
