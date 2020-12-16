@@ -1,189 +1,185 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html class="page page_form" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
+    <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="page-body">
-    <header class="main-header">
-      <nav class="main-navigation main-container">
-        <a href="index.html" class="main-header-logo">
-          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип сайта Нёрдс">
-        </a>
-        <ul class="site-navigation">
-          <li><a href="studio.html" class="site-navigation-link">студия</a></li>
-          <li><a href="customers.html" class="site-navigation-link">клиенты</a></li>
-          <li><a href="catalog.html" class="site-navigation-link">магазин</a></li>
-          <li><a href="blank.html" class="site-navigation-link">контакты</a></li>
-        </ul>
-        <a href="basket.html" class="basket-link"><img src="img/cart-icon.svg" width="15" height="15">корзина</a>
+  <body class="page__body">
+    <header class="page__header page-header">
+      <a class="page-header__logo" href="index.html">
+        <img src="https://via.placeholder.com" width="60" height="40" alt="Приложение для обработки фотографий «Pink»">
+      </a>
+      <nav class="page-header__main-nav main-nav">
+        <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="index.html.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#nowhere">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#nowhere">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="https://htmlacademy.ru/" target="_blank">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
-    <main class="catalog-container">
-      <h1 class="catalog-title">Магазин готовых шаблонов</h1>
-      <div class="container-wrapper">
-        <div class="filter">
-          <form>
-            <fieldset class="filter-item">
-              <legend>Стоимость</legend>
-              <div class="range-filter">
-                <div class="range-controls">
-                  <div class="scale">
-                    <div class="bar" style="
-                      width: 30%;
-                      margin-left: 20%;
-                    "></div>
+    <main class="page__main">
+      <section class="photo-section">
+        <div class="photo-section__wrapper">
+          <h2 class="visually-hidden">Каталог фотографий</h2>
+          <p class="photo-section__motivation">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+          <ul class="photo-users__photo-list photo-list">
+              <li class="photo-list__item photo photo_panorama">
+                <a class="photo__image-container">
+                  <img src="catalog.html" width="1200" height="506" alt="Панорама">
+                </a>
+                <div class="photo__description">
+                  <h3 class="photo__name"><a href="#nowhere">Анна</a><span>(5 минут назад)</span></h3>
+                  <p class="photo__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+                  <div class="photo__bottom">
+                    <p class="photo__likes">Нравится: 215</p>
+                    <button class="photo__like-button" type="button"></button>
                   </div>
-                  <div class="toggle toggle-min" tabindex="0" style="
-                    left: 20%;
-                  "></div>
-                  <div class="toggle toggle-max" tabindex="0" style="
-                    left: 50%;
-                  "></div>
                 </div>
-                <div class="price-controls">
-                  <label class="min-price">
-                    от <input type="number" name="min-price" value="0">
-                  </label>
-                  <label class="max-price">
-                    до <input type="number" name="max-price" value="15000">
-                  </label>
+              </li>
+              <li class="photo-list__item">
+                <a class="photo-list__image-container">
+                  <img src="catalog.html" width="300" height="400" alt="Автомобиль">
+                </a>
+                <div class="photo-list__description">
+                  <h3 class="photo-list__name">Левон<span>(5 часов назад)</span></h3>
+                  <p class="photo-list__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                  <div class="photo__bottom">
+                    <p class="photo-list__likes">Нравится: 356</p>
+                    <button class="photo-list__like-button" type="button"></button>
+                  </div>
                 </div>
+              </li>
+              <li class="photo-list__item">
+                <a class="photo-list__image-container">
+                  <img src="catalog.html" width="300" height="400" alt="Барабанная установка">
+                </a>
+                <div class="photo-list__description">
+                  <h3 class="photo-list__name">Антон<span>(12 часов назад)</span></h3>
+                  <p class="photo-list__text">Соседи будут рады!</p>
+                  <div class="photo__bottom">
+                    <p class="photo-list__likes">Нравится: 666</p>
+                    <button class="photo-list__like-button" type="button"></button>
+                  </div>
+                </div>
+              </li>
+              <li class="photo-list__item">
+                <a class="photo-list__image-container">
+                  <img src="catalog.html" width="300" height="400" alt="Стеклянная крыша">
+                </a>
+                <div class="photo-list__description">
+                  <h3 class="photo-list__name">Борис<span>(20 часов назад)</span></h3>
+                  <p class="photo-list__text">Здесь могла быть ваша цитата о высоком и вечном</p>
+                  <div class="photo__bottom">
+                    <p class="photo-list__likes">Нравится: 215</p>
+                    <button class="photo-list__like-button" type="button"></button>
+                  </div>
+                </div>
+              </li>
+              <li class="photo-list__item">
+                <a class="photo-list__image-container">
+                  <img src="catalog.html" width="300" height="400" alt="Кубанская бахча">
+                </a>
+                <div class="photo-list__description">
+                  <h3 class="photo-list__name">Сергей<span>(25 часов назад)</span></h3>
+                  <p class="photo-list__text">Самая кубанская в мире!</p>
+                  <div class="photo__bottom">
+                    <p class="photo-list__likes">Нравится: 4</p>
+                    <button class="photo-list__like-button" type="button"></button>
+                  </div>
+                </div>
+              </li>
+              <li class="photo-list__item">
+                <a class="photo-list__image-container">
+                  <img src="catalog.html" width="300" height="400" alt="Гора и ноги">
+                </a>
+                <div class="photo-list__description">
+                  <h3 class="photo-list__name">Максим<span class="photo-list__time">(40 часов назад)</span></h3>
+                  <p class="photo-list__text">Где снег-то?</p>
+                  <div class="photo__bottom">
+                    <p class="photo-list__likes">Нравится: 150</p>
+                    <button class="photo-list__like-button" type="button"></button>
+                  </div>
+                </div>
+              </li>
+              <li class="photo-list__item">
+                <a class="photo-list__image-container">
+                  <img src="catalog.html" width="300" height="400" alt="Крыло самолёта">
+                </a>
+                <div class="photo-list__description">
+                  <h3 class="photo-list__name">Надежда<span class="photo-list__time">(45 часов назад)</span></h3>
+                  <p class="photo-list__text">Всем GM и взаимные лайки!</p>
+                  <div class="photo__bottom">
+                    <p class="photo-list__likes">Нравится: 2560</p>
+                    <button class="photo-list__like-button" type="button"></button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+          <form class="photo-modify">
+            <p class="photo-modify__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+            <div class="photo-modify__wrapper">
+              <div class="photo-modify__photo-example">
+                <img class="photo-modify__example" src="index.html" width="" height="" alt="Фото для модификаций и загрузки">
               </div>
-            </fieldset>
+
+              <div class="photo-modify__sliders slider">
+                <label>
+                  <span class="visually-hidden">Размер</span>
+                  <input class="slider" type="range" min="1" max="100" value="25" step="1" id="size">
+                </label>
+                <label>
+                  <span class="visually-hidden">Отливка</span>
+                  <input class="slider" type="range" min="1" max="100" value="85" step="1" id="casting">
+                </label>
+                <label>
+                  <span class="visually-hidden">Контраст</span>
+                  <input class="slider" type="range" min="1" max="100" value="60" step="1" id="contrast">
+                </label>
+              </div>
+
+              <div class="photo-modify__option-buttons buttons">
+                <button class="buttons__post" type="submit">Запостить</button>
+                <button class="buttons__reset" type="reset">Отмена</button>
+              </div>
+            </div>
           </form>
-            <fieldset class="grid">
-              <h2 class="filter-description">Сетка:</h2>
-              <ul class="radio-button">
-                <li><input type="radio">Адаптивная</li>
-                <li><input type="radio">Фиксированная</li>
-                <li><input type="radio">Резиновая</li>
-              </ul>
-            </fieldset>
-            <fieldset class="characteristic">
-              <h2 class="filter-description">Особенности:</h2>
-              <ul class="radio-button">
-                <li><input type="radio">Слайдер</li>
-                <li><input type="radio">Блок преимуществ</li>
-                <li><input type="radio">Новости</li>
-                <li><input type="radio">Галерея</li>
-                <li><input type="radio">Корзина</li>
-              </ul>
-            </fieldset>
-            <button class="result">Показать</button>
-        </div>
-        <div class="catalog-partners">
-          <div class="sort">
-            <p class="sorting">Сортировать:</p>
-            <ul class="sorting">
-              <li><a class="sorting-link">По цене</a></li>
-              <li><a href="#" class="sorting-link">По типу</a></li>
-              <li><a href="#" class="sorting-link">По названию</a></li>
-            </ul>
-              <div class="buttons-up-down">
-                <a class="down" href="#">
-                  <img src="img/icon-down-dir.svg">
-                  <span class="visually-hidden">down</span>
-                </a>
-                <a class="up" href="#">
-                  <img src="img/icon-up-dir.svg">
-                  <span class="visually-hidden">up</span>
-                </a>
-              </div>
-          </div>
-          <section class="sites">
-            <ul class="portfolio-list">
-              <li class="partners">
-                <div class="partner">
-                  <p class="name">
-                    <img src="img/img-sedona-1.jpg" width="359" height="578" alt="Седона изображение">
-                  </p>
-                  <div class="popap">
-                    <h3>SEDONA</h3>
-                    <p class="text">Информационный сайт для туристов</p>
-                    <span class="price">9 900 руб.</span>
-                  </div>
-                </div>
-              </li>
-              <li class="partners">
-                <a href="#" class="partners">
-                  <p class="pink-name">
-                    <img src="img/img-pink-1.jpg" width="359" height="578" alt="Пинк изображение">
-                  </p>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="partners">
-                  <p class="barbershop-name">
-                    <img src="img/img-barbershop-1.jpg" width="359" height="578" alt="Барбершоп изображение">
-                  </p>
-                </a>
-              </li>
-              <li class="partners">
-                <div class="partners">
-                  <p class="mishka-name">
-                    <img src="img/img-mishka-1.jpg" width="359" height="578" alt="Мишка изображение">
-                  </p>
-                </div>
-              </li>
-              <li class="partners">
-                <div class="partners">
-                  <p class="aplus-name">
-                    <img src="img/img-aplus-1.jpg" width="359" height="578" alt="Эплус изображение">
-                  </p>
-                </div>
-              </li>
-              <li class="partners">
-                <div class="partners">
-                  <h2 class="kvast-name">
-                    <img src="img/img-kvast-1.jpg" width="359" height="578" alt="Кваст изображение">
-                  </h2>
-                </div>
-              </li>
-            </ul>
-            <ul class="pagination">
-              <li><a class="pagination-link">1</a></li>
-              <li><a class="pagination-link">2</a></li>
-              <li><a class="pagination-link">3</a></li>
-              <li><a class="button-next">Следующая</a></li>
-            </ul>
-          </section>
-        </div>
-      </div>
-    </main>
-    <footer class="main-footer-index">
-      <section class="map-navigation">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1413.2261096791!2d30.32149813686501!3d59.93872073358416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1601982449388!5m2!1sru!2sru" width="100%" height="420" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" width="1440" height="416" title="Офис компании по адресу: ул. Б. Конюшенная, д. 19/8, Санкт-Петербург"></iframe>
-        <div class="nerds-container">
-          <div class="nerds-adress">
-            <h3 class="nerds-adress-title">nёrds design studio</h3>
-            <p class="nerds-adress-description">191186, Санкт-Петербург, <br>ул. Б. Конюшенная, д. 19/8</p>
-            <span class="telephone-number">тел. +7(812)275-75-75</span>
-            <a href="#" class="description-button">напишите нам</a>
-          </div>
+
         </div>
       </section>
-      <div class="footer-container">
-        <div class="footer-links">
-          <a href="https://vk.com/" class="social-links">
-            <img src="img/icon-vk.svg" width="27" height="15" alt="ВК">
-            <span class="visually-hidden">VK</span>
-          </a>
-          <a href="https://facebook.com/" class="social-links">
-            <img src="img/icon-facebook.svg" width="12" height="22" alt="facebook">
-            <span class="visually-hidden">facebook</span>
-          </a>
-          <a href="https://instagram.com/" class="social-links">
-            <img src="img/icon-inst.svg" width="21" height="21" alt="instagram">
-            <span class="visually-hidden">instagram</span>
-          </a>
-        </div>
-        <div class="friendsship">
-          <p class="friendsship-title">Давайте дружить, это выгодно!</p>
-          <p class="friendsship-text">Скидка 10% для друзей из социальных сетей</p>
+    </main>
+    <footer class="page__footer page-footer">
+      <div class="page__wrapper page-footer__wrapper">
+        <a class="page-footer__logo" href="index.html">Pink</a>
+        <ul class="social">
+          <li class="social__item">
+            <a class="social__item_twitter" href="#nowhere" aria-label="Twitter"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__item_fb" href="#nowhere" aria-label="Facebook"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__item_youtube" href="#nowhere" aria-label="YouTube"></a>
+          </li>
+        </ul>
+        <div class="page-footer__copyright">
+          <p class="page-footer__copyright-text">Разработано</p>
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HtmlAcademy"></a>
         </div>
       </div>
     </footer>
