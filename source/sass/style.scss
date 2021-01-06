@@ -1,1 +1,10 @@
-// Начните писать стили здесь
+@import "node_modules/normalize.css/normalize";
+@import "service/variables.scss";
+@import "service/media-requeries.scss";
+@import "service/fonts.scss";
+@import "service/mixins.scss";
+@import "service/global.scss";
+// Blocks
+@import "blocks/page.scss";
+// Blocks header
+@import "blocks/page-header";
