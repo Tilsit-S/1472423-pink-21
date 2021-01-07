@@ -6,5 +6,7 @@
 }
 
 .page__body {
-  display: grid;
+  min-height: 100%;
+  margin: 0;
+  background-color: $lightgrey;
 }
