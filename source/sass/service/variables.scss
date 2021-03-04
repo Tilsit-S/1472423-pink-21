@@ -1,10 +1,12 @@
 /*переменные*/
-//  Colors
-$lightgrey: rgba(242, 242, 242, 1);
-$mobile-header: rgba(40, 54, 69, 1);
+
+//Colors
+$main-background: rgba(242, 242, 242, 1);
+$header-background: rgba(40, 54, 69, 1);
+$text-light: #ffffff;
+$text-dark: rgba(40, 54, 69, 1);
 
 //Viewports
-
-$tablet-width: 768 px;
+$mobile-width: 320px;
+$tablet-width: 660px;
 $desktop-width: 1200px;
-$mobile-width: 767px;

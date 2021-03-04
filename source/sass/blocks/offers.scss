@@ -1,0 +1,26 @@
+.offers {
+  outline: 2px solid yellow;
+  color: $text-dark;
+}
+
+.offers__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.offers__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.offer__img {
+  @media (min-width: $mobile-width) {
+    display: none;
+  }
+}
