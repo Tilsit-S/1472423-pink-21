@@ -1,0 +1,26 @@
+.contacts-and-map {
+  text-align: center;
+  color: $text-dark;
+}
+
+.contacts-and-map__link,
+.contacts-and-map__adress {
+  color: #d22856;
+}
+
+.contacts-and-map__items {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.contacts-and-map__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+}

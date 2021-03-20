@@ -17,10 +17,36 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+  }
 }
 
 .offer__img {
   @media (min-width: $mobile-width) {
     display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.offers__advantage {
+  text-align: center;
+
+  @media (min-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.advantage__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
   }
 }

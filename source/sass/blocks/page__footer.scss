@@ -1,0 +1,23 @@
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  color: $text-dark;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.social {
+  list-style-type: none;
+}
+
+.page-footer__social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
