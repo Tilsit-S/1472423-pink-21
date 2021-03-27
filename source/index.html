@@ -46,25 +46,25 @@
             <div class="promo__img">
               <img src="https://via.placeholder.com/320x286" width="320" height="286" alt="Изображение телефона">
             </div>
-            <button class="promo__button">Скачать приложение</button>
-            <ul class="promo__list applications">
-              <li class="applications__item">
-                <a class="applications__link" href="https://www.apple.com/app-store/">
-                  <img src="https://via.placeholder.com/47x56" width="47" height="56" alt="Apple">
-                </a>
-              </li>
-              <li class="applications__item">
-                <a class="applications__link" href="https://play.google.com/store/">
-                  <img src="https://via.placeholder.com/43x47" width="43" height="47" alt="Android">
-                </a>
-              </li>
-              <li class="applications__item">
-                <a class="applications__link" href="https://www.microsoft.com/ru-ru/store/apps">
-                  <img src="https://via.placeholder.com/44x41" width="44" height="41" alt="Windows">
-                </a>
-              </li>
-            </ul>
-            <p class="promo__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+              <button class="promo__button">Скачать приложение</button>
+              <ul class="promo__list applications">
+                <li class="applications__item">
+                  <a class="applications__link" href="https://www.apple.com/app-store/">
+                    <img src="https://via.placeholder.com/47x56" width="47" height="56" alt="Apple">
+                  </a>
+                </li>
+                <li class="applications__item">
+                  <a class="applications__link" href="https://play.google.com/store/">
+                    <img src="https://via.placeholder.com/43x47" width="43" height="47" alt="Android">
+                  </a>
+                </li>
+                <li class="applications__item">
+                  <a class="applications__link" href="https://www.microsoft.com/ru-ru/store/apps">
+                    <img src="https://via.placeholder.com/44x41" width="44" height="41" alt="Windows">
+                  </a>
+                </li>
+              </ul>
+              <p class="promo__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
           </div>
         </div>
       </section>
@@ -96,15 +96,20 @@
               <p class="offer__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
+          <div class="offers__timing-img">
+            <img src="https://via.placeholder.com/157x320" width="157"  height="320" alt="Фотография для mobile и tablet">
+          </div>
           <div class="offers__advantage advantage">
-            <h3 class="visually-hidden">Положительный эффект от использования приложения</h3>
-            <p class="advantage__img">
-              <img src="https://via.placeholder.com/298x345" width="298" height="345" alt="Изображение секундомера">
-            </p>
-            <div class="advantage__main">
-              <h3 class="advantage__title">Эффект на 24 часа</h3>
-              <p class="advantage__description">Британские учёные провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-              <a class="advantage__link" href="#nowhere">Узнать больше об исследовании</a>
+            <div class="advantage__wrapper">
+              <h3 class="visually-hidden">Положительный эффект от использования приложения</h3>
+              <div class="advantage__img">
+                <img src="https://via.placeholder.com/298x345" width="298" height="345" alt="Изображение секундомера">
+              </div>
+              <div class="advantage__main">
+                <h3 class="advantage__title">Эффект на 24 часа</h3>
+                <p class="advantage__description">Британские учёные провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+                <a class="advantage__link" href="#nowhere">Узнать больше об исследовании</a>
+              </div>
             </div>
           </div>
         </div>
@@ -123,9 +128,11 @@
             </li>
           </ul>
           <div class="reviews__toggles toggles">
-            <button class="toggles__item toggles__item_current" type="button" aria-label="1 слайд"></button>
-            <button class="toggles__item" type="button" name="reviews" aria-label="2 слайд"></button>
-            <button class="toggles__item" type="button" name="reviews" aria-label="3 слайд"></button>
+            <div class="toggles__wrapper">
+              <button class="toggles__item toggles__item_current" type="button" aria-label="1 слайд"></button>
+              <button class="toggles__item" type="button" name="reviews" aria-label="2 слайд"></button>
+              <button class="toggles__item" type="button" name="reviews" aria-label="3 слайд"></button>
+            </div>
           </div>
         </div>
       </section>
@@ -186,9 +193,11 @@
             </tr>
           </table>
           <div class="price__toggles toggles">
-            <button class="toggles__item toggles__item_current" type="button" aria-label="1 слайд"></button>
-            <button class="toggles__item" type="button" name="reviews" aria-label="2 слайд"></button>
-            <button class="toggles__item" type="button" name="reviews" aria-label="3 слайд"></button>
+            <div class="toggles__wrapper">
+              <button class="toggles__item toggles__item_current" type="button" aria-label="1 слайд"></button>
+              <button class="toggles__item" type="button" name="reviews" aria-label="2 слайд"></button>
+              <button class="toggles__item" type="button" name="reviews" aria-label="3 слайд"></button>
+            </div>
           </div>
         </div>
       </section>
@@ -196,18 +205,20 @@
         <h2 class="visually-hidden">Наши контакты</h2>
         <div class="contacts-and-map__contacts">
           <p class="contacts-and-map__title">Остались вопросы?<br>Свяжитесь с нами!</p>
-          <div class="contacts-and-map__items">
-            <div class="contacts-and-map__item">
-              <p class="contacts-and-map__item-title">Звоните:</p>
-              <a class="contacts-and-map__link" href="tel:+7(812)555-66-66">+7(812)555-66-66</a>
-            </div>
-            <div class="contacts-and-map__item">
-              <p class="contacts-and-map__item-title">Приезжайте в гости:</p>
-              <a class="contacts-and-map__adress">ул. Большая<br>Конюшенная, 19/8</a>
-            </div>
-            <div class="contacts-and-map__item">
-              <p class="contacts-and-map__item-title">Приезжайте в гости:</p>
-              <a class="contacts-and-map__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          <div class="contacts-and-map__wrapper">
+            <div class="contacts-and-map__items">
+              <div class="contacts-and-map__item">
+                <p class="contacts-and-map__item-title">Звоните:</p>
+                <a class="contacts-and-map__link" href="tel:+7(812)555-66-66">+7(812)555-66-66</a>
+              </div>
+              <div class="contacts-and-map__item">
+                <p class="contacts-and-map__item-title">Пишите:</p>
+                <a class="contacts-and-map__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+              </div>
+              <div class="contacts-and-map__item">
+                <p class="contacts-and-map__item-title">Приезжайте в гости:</p>
+                <a class="contacts-and-map__adress">ул. Большая<br>Конюшенная, 19/8</a>
+              </div>
             </div>
           </div>
         </div>
@@ -219,17 +230,19 @@
     <footer class="page__footer page-footer">
       <div class="page__wrapper page-footer__wrapper">
         <a class="page-footer__logo">Pink</a>
-        <ul class="social">
-          <li class="social__item">
-            <a class="social__item_twitter" href="#nowhere" aria-label="Twitter"></a>
-          </li>
-          <li class="social__item">
-            <a class="social__item_fb" href="#nowhere" aria-label="Facebook"></a>
-          </li>
-          <li class="social__item">
-            <a class="social__item_youtube" href="#nowhere" aria-label="YouTube"></a>
-          </li>
-        </ul>
+        <div class="page-footer__social">
+          <ul class="social">
+            <li class="social__item">
+              <a class="social__item_twitter" href="#nowhere" aria-label="Twitter"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__item_fb" href="#nowhere" aria-label="Facebook"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__item_youtube" href="#nowhere" aria-label="YouTube"></a>
+            </li>
+          </ul>
+        </div>
         <div class="page-footer__copyright">
           <p class="page-footer__copyright-text">Разработано</p>
           <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HtmlAcademy"></a>

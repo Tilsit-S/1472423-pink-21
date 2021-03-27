@@ -1,0 +1,21 @@
+.reviews {
+  color: $text-dark;
+}
+
+.reviews__writter {
+  list-style-type: none;
+}
+
+.reviews__list {
+  padding: 0;
+  text-align: center;
+}
+
+.toggles__wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.table__row {
+  color: $text-dark;
+}

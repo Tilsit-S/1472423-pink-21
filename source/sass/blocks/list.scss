@@ -1,10 +1,9 @@
 .main-nav__list {
   outline: 2px solid rgba(0, 255, 0, 0.8);
   outline-offset: -2px;
-}
 
-@media (min-width: $tablet-width) {
-  .main-nav__list {
-    width: 620px;
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
   }
 }
